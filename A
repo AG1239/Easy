@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Austin's Versa Skill Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Versa Skill Solutions</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Versa Skill Solutions</h2>
+      <p>Your partner in unlocking your team's potential.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>Custom Training Programs</h3>
+        <p>Tailored workshops and seminars for your business needs.</p>
+      </div>
+      <div class="service">
+        <h3>Digital Learning Platform</h3>
+        <p>Accessible online courses designed for flexibility and engagement.</p>
+      </div>
+      <div class="service">
+        <h3>Expert Trainers</h3>
+        <p>Experienced professionals providing practical insights for real-world application.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial">
+        <blockquote>"Versa Skill Solutions transformed our workforce with their impactful training programs. Highly recommended!"</blockquote>
+        <cite>John Doe, CEO of Example Inc.</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"The digital learning platform offered by Versa Skill Solutions helped our team stay ahead in a competitive market."</blockquote>
+        <cite>Jane Smith, HR Manager</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Versa Skill Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.services {
+  padding: 80px 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial blockquote {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  font-style: normal;
+}
+
+.contact {
+  padding: 80px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+// Example JavaScript for form submission handling, replace with your backend logic
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Replace with your form handling logic (e.g., sending data to a server)
+  alert('Form submitted successfully!');
+  this.reset();
+});
